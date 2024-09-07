@@ -11,11 +11,19 @@
     border: solid transparent 0.15rem;
 }
 
+.btn-primary .icon {
+    fill: white;
+}
+
 .btn-primary:hover {
     background: transparent;
     color: var(--primary-color);
     transition: 0.3s;
     border-color: var(--primary-color);
+}
+
+.btn-primary:hover .icon {
+    fill: var(--primary-color);
 }
 
 .btn-secondary {
@@ -31,14 +39,16 @@
     border: solid var(--primary-color) 0.15rem;
 }
 
+.btn-secondary .icon {
+    fill: var(--primary-color);
+}
+
 .btn-secondary:hover {
     background: var(--primary-color);
     color: var(--light-text-color);
     border-color: transparent;
 }
 
-.btn-secondary-icon:hover {
-    background: var(--primary-color);
-    color: var(--light-text-color);
-    border-color: transparent;
+.btn-secondary:hover .icon {
+    fill: var(--primary-color);
 }
