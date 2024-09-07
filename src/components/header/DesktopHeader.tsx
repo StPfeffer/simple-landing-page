@@ -17,7 +17,7 @@ const DesktopHeader = () => (
         <div className="desktop-only">
             <div className="flex items-center">
                 <a className="reverse-color ml-lg" href="">Login</a>
-                <Button text="Cadastre-se" icon={<RightArrowIcon color="white" />} />
+                <Button text="Cadastre-se" icon={<RightArrowIcon />} />
             </div>
         </div>
     </>
