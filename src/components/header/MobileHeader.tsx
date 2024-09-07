@@ -1,3 +1,4 @@
+import Container from "../Container";
 import CloseMenuIcon from "../icon/CloseMenuIcon";
 import MenuItem from "./MenuItem";
 
@@ -9,7 +10,7 @@ interface MobileHeaderProps {
 export default function MobileHeader({ setShowMobileMenu, showMobileMenu }: MobileHeaderProps) {
     return (
         <div className="mobile-menu-content">
-            <div className="container flex">
+            <Container className="flex">
                 <ul>
                     <MenuItem href="#" text="Home" />
                     <MenuItem href="#solution" text="Soluções" />
@@ -21,7 +22,7 @@ export default function MobileHeader({ setShowMobileMenu, showMobileMenu }: Mobi
                 <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
                     <CloseMenuIcon />
                 </span>
-            </div>
+            </Container>
         </div>
     )
 }
