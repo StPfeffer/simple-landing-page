@@ -1,6 +1,6 @@
 import Header from "../components/header/Header"
-import HeroSection from "../components/hero/HeroSection"
-
+import HeroSection from "../components/home/HeroSection"
+import SolutionSection from "../components/home/SoluctionSection"
 
 const HomePage = () => {
   return (
@@ -12,6 +12,8 @@ const HomePage = () => {
         primaryButtonText="Cadastre-se"
         secondaryButtonText="Veja mais"
       />
+      <SolutionSection title="Sob medida para você"
+      description="Inovação é com a gente! O Km Fácil já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços." />
     </>
   )
 }
