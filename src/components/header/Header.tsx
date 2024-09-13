@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../styles/header.css";
 import "../../styles/utility.css";
 import MobileHeader from "./MobileHeader";
@@ -8,6 +8,20 @@ import DesktopHeader from "./DesktopHeader";
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+        const body = document.body;
+
+        body.style.overflow = showMobileMenu ? 'hidden' : '';
+        body.style.position = showMobileMenu ? 'fixed' : '';
+        body.style.width = showMobileMenu ? '100%' : '';
+
+        return () => {
+            body.style.overflow = '';
+            body.style.position = '';
+            body.style.width = '';
+        };
+    }, [showMobileMenu]);
 
     return (
         <header className="container py-sm">
