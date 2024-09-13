@@ -12,15 +12,9 @@ export default function Header() {
     useEffect(() => {
         const body = document.body;
 
-        if (showMobileMenu) {
-            body.style.overflow = 'hidden';
-            body.style.position = 'fixed';
-            body.style.width = "100%";
-        } else {
-            body.style.overflow = '';
-            body.style.position = '';
-            body.style.width = '';
-        }
+        body.style.overflow = showMobileMenu ? 'hidden' : '';
+        body.style.position = showMobileMenu ? 'fixed' : '';
+        body.style.width = showMobileMenu ? '100%' : '';
 
         return () => {
             body.style.overflow = '';
