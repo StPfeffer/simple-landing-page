@@ -10,11 +10,17 @@ export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     useEffect(() => {
-        if (showMobileMenu) {
-            document.body.classList.add("no-scroll");
-        } else {
-            document.body.classList.remove("no-scroll");
-        }
+        const body = document.body;
+
+        body.style.overflow = showMobileMenu ? 'hidden' : '';
+        body.style.position = showMobileMenu ? 'fixed' : '';
+        body.style.width = showMobileMenu ? '100%' : '';
+
+        return () => {
+            body.style.overflow = '';
+            body.style.position = '';
+            body.style.width = '';
+        };
     }, [showMobileMenu]);
 
     return (
