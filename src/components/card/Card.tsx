@@ -6,7 +6,11 @@ interface CardProps {
     icon?: React.ReactNode;
 }
 
-export default function Card({ title, description, icon }: CardProps) {
+export default function Card({
+    title,
+    description,
+    icon
+}: CardProps) {
     return (
         <div className="card">
             {icon && <div className="card-icon">{icon}</div>}

@@ -2,6 +2,8 @@
     border: 1px solid var(--border-color);
     border-radius: 1rem;
     padding: 2rem;
+    background: var(--light-gray);
+    border-bottom: 0.2rem solid var(--primary-color);
     text-align: center;
     box-shadow: 2.5px 5.0px 5.0px rgba(0, 0, 0, 0.1);
     display: flex;
