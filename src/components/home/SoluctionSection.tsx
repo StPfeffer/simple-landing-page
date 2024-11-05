@@ -5,21 +5,13 @@ import CarIcon from "../icon/CarIcon";
 import MaintenanceIcon from "../icon/MaintenaneIcon";
 import PinIcon from "../icon/PinIcon";
 
-interface SolutionSectionProps {
-    title: string;
-    description: string;
-}
-
-const SolutionSection: React.FC<SolutionSectionProps> = ({
-    title,
-    description,
-}) => {
+const SolutionSection = () => {
     return (
         <section id="solution">
             <Container className="content">
                 <p className="desktop-only reverse-color">Soluções</p>
-                <h1>{title}</h1>
-                <p>{description}</p>
+                <h1>Sob medida para você</h1>
+                <p>Inovação é com a gente! O <span className="reverse-color">Km Fácil</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
 
                 <div className="card-container even-columns">
                     <Card

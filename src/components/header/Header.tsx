@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../styles/header.css";
 import "../../styles/utility.css";
 import MobileHeader from "./MobileHeader";
@@ -8,6 +8,14 @@ import DesktopHeader from "./DesktopHeader";
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+        if (showMobileMenu) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
+    }, [showMobileMenu]);
 
     return (
         <header className="container py-sm">
