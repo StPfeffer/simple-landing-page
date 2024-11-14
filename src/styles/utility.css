@@ -35,6 +35,14 @@
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
 .grid {
     display: grid;
 }

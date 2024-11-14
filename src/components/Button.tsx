@@ -4,19 +4,21 @@ interface IButtonProps {
     text: string;
     secondary?: boolean;
     icon?: React.ReactNode;
-    onClick?: () => void;
+    disabled?: boolean;
 }
 
 export default function Button({
     text,
     secondary,
     icon,
-    onClick
+    disabled = false
 }: IButtonProps) {
     return (
         <button
-            onClick={onClick}
-            className={secondary ? "btn-secondary" : "btn-primary"}>
+            disabled={disabled}
+            className={
+                secondary ? "btn-secondary" : "btn-primary"
+            }>
             {text}
             {icon && <span>
                 {icon}

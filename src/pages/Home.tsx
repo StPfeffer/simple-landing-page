@@ -1,4 +1,6 @@
 import Header from "../components/header/Header"
+import ContactSection from "../components/home/ContactSection"
+import FooterSection from "../components/home/FooterSection"
 import HeroSection from "../components/home/HeroSection"
 import PricingSection from "../components/home/PricingSection"
 import SolutionSection from "../components/home/SoluctionSection"
@@ -21,6 +23,10 @@ const HomePage = () => {
             <TestimonialsSection />
 
             <PricingSection />
+
+            <ContactSection />
+
+            <FooterSection />
         </>
     )
 }
