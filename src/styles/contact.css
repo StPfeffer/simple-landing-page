@@ -1,13 +1,24 @@
-.contato-section {
-    padding: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 2rem;
 }
 
-.contato-form {
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    :first-child {
+        color: var(--primary-color);
+        font-weight: var(--fw-bold);
+    }
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
 }

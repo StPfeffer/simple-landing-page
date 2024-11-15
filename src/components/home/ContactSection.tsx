@@ -60,7 +60,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section id="pricing">
+        <section id="contact">
             <Container>
                 <header>
                     <p className="desktop-only reverse-color">Envie sua dúvida</p>
@@ -71,7 +71,7 @@ const ContactSection = () => {
                     </p>
                 </header>
 
-                <form onSubmit={handleSubmit} className="contato-form">
+                <form onSubmit={handleSubmit} className="contact-form">
                     <div className="flex flex-col gap-1.5">
                         <input
                             value={email}
