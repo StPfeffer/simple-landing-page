@@ -29,7 +29,9 @@ export default function Header() {
                 <a href="/">
                     <Logo theme="light" />
                 </a>
+
                 <DesktopHeader />
+
                 <div className="mobile-menu">
                     {showMobileMenu ?
                         <MobileHeader setShowMobileMenu={setShowMobileMenu} showMobileMenu={showMobileMenu} />

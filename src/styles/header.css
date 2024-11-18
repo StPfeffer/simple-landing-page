@@ -40,7 +40,7 @@
     font-size: var(--fs-lg);
 }
 
-@media (width >=1280px) {
+@media (width >= 1280px) {
     header {
         position: relative;
         z-index: 1;

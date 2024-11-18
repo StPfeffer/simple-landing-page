@@ -1,6 +1,6 @@
 #hero {
-    background: var(--light-gray);
-    border-top: 0.125rem solid #e4e4e4;
+    background: var(--bg-color);
+    border-top: 0.125rem solid var(--light-gray);
     height: 90vh;
     display: flex;
 }
@@ -71,4 +71,9 @@
 .content p {
     width: 80%;
     align-self: center;
+}
+
+.content p:first-of-type {
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
 }
