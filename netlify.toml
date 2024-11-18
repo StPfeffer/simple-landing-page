@@ -10,6 +10,6 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://simple-landing-page.azurewebsites.net/api"
+  to = "https://simple-landing-page.azurewebsites.net/api/http_trigger"
   status = 200
   force = true
