@@ -6,7 +6,7 @@ export default defineConfig({
     server: {
         proxy: {
             "/api": {
-                target: "https://simple-landing-page.azurewebsites.net/api/http_trigger",
+                target: "https://simple-landing-page.azurewebsites.net/api",
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, "")
             }
