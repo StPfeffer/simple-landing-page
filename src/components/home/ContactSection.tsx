@@ -30,7 +30,7 @@ const ContactSection = () => {
         setSuccessMessage("");
 
         try {
-            const response = await fetch("/api", {
+            const response = await fetch("https://simple-landing-page.azurewebsites.net/api/http_trigger", {
                 method: "POST",
                 headers: {
                     "Access-Control-Allow-Origin": "*",
