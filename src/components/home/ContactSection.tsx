@@ -36,7 +36,7 @@ const ContactSection = () => {
                     "Access-Control-Allow-Origin": "*",
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ toMail: email, message: content }),
+                body: JSON.stringify({ toMail: email, content: content }),
             });
 
             if (response.ok) {
